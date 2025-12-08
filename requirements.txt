@@ -1,9 +1,31 @@
-langchain==0.3.26
-flask==3.1.1
-sentence-transformers==4.1.0
-pypdf==5.6.1
-python-dotenv==1.1.0
-langchain-pinecone==0.2.8
-langchain-openai==0.3.24
-langchain-community==0.3.26
--e .
+# core langchain pieces (loose versions to avoid conflicts)
+#langchain>=0.1.17
+
+# langchain community pieces used by some loaders/embeddings
+ # langchain-community>=0.0.33
+#langchain-text-splitters>=0.0.1
+#langchain-pinecone>=0.0.3
+
+# embeddings
+#sentence-transformers>=2.2.2
+
+# Pinecone client (pick a 2.x release to avoid the grpc Windows issue)
+#pinecone-client==2.2.0
+
+# utilities
+#python-dotenv>=1.0.1
+#tqdm>=4.0.0
+pypdf>=3.0.0
+
+# requirements.txt (recommended starting point)
+langchain
+langchain-core
+langchain-community
+langchain-text-splitters
+langchain-pinecone==0.2.13
+pinecone==7.3.1
+pypdf
+sentence-transformers
+chromadb
+openai
+python-dotenv
