@@ -14,3 +14,4 @@ chromadb
 openai
 torch
 transformers
+langchain-huggingface
