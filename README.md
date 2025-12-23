@@ -33,7 +33,7 @@ pip install -r requirements.txt
 
 # Set environment variables
 Create a .env file
-PINECONE_API_KEY=your_pinecone_api_key
+PINECONE_API_KEY="your_pinecone_api_key"
 
 # Run locally
 python app.py
